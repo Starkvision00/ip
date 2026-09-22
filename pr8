@@ -1,0 +1,11 @@
+image=imread("C:\Users\student\Desktop\25 PCS029\imagel.jpg.webp");
+
+gray=rgb2gray(image);
+
+mean_filtered_image=imfilter(gray, ones(3,3)/
+
+9);
+
+figure();
+
+imshow(mean_filtered_image);
