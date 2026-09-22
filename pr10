@@ -1,0 +1,27 @@
+image=imread("C:\Users\student\Desktop\25PCS029\imagel.jpg.webp");
+
+g=rgb2gray(image);
+
+figure();
+
+imshow(g);
+
+title("Original grayscale image");
+
+noisy_image=imnoise(g,"gaussian",0,0.01); figure();
+
+imshow(noisy_image);
+
+title("Noisy image");
+
+restore_filter=[1 11;1 11;1 11;]/9;
+
+restored_image=imfilter(noisy_image,restore
+
+_filter);
+
+figure();
+
+imshow(restored_image);
+
+title("restored image");
