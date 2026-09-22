@@ -1,0 +1,37 @@
+imagel=imread("C:\Users\student\Download
+
+s\car.jpg");
+
+image2=imread("C:\Users\student\Download
+
+s\car.jpg");
+
+grayl=rgb2gray(imagel);
+
+gray2=rgb2gray(image2);
+
+//mean
+
+mean_value=mean(double(grayl));
+
+disp(mean_value);
+
+//standard deviation
+
+std_dev=stdev(double(gray1));
+
+disp(std_dev);
+
+//correlation coefficient
+
+x=matrix(double(gray1),-1,1);
+
+y=matrix(double(gray1),-1,1);
+
+corr_coeff=sum((x-mean(x)).*(y-
+
+mean(y)))/sqrt(sum((x-mean(x)).^2)*sum((x-
+
+mean(x)).^2));
+
+disp(corr_coeff);
